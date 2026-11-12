@@ -1,14 +1,12 @@
-# José Sánchez — Web Portfolio
-
-A one-page showcase of websites I've designed, written and built.
+# Websites I've created
 
 **View it:** https://jmsan1992.github.io/portfolio/
 
-| Project | What it is | Status |
+| Website | What it is | Status |
 |---|---|---|
-| [90scale](https://90scale.com) | Positioning consultancy website | Live |
-| [CopyOfficer](https://www.copyofficer.com) | Hispanic acquisition agency landing page | Live |
-| [Agentic Marketing Lab](https://agenting-marketing-lab.vercel.app) | Online course sales page | Pre-launch |
+| [90scale](https://90scale.com) | Website for a positioning consultancy | Live |
+| [CopyOfficer](https://www.copyofficer.com) | Landing page for a Hispanic customer acquisition service | Live |
+| [Agentic Marketing Lab](https://agenting-marketing-lab.vercel.app) | Sales page for an online course | Pre-launch |
 | [josegrowth.com](https://josegrowth.com) | Personal site and CV | Live |
 
-This repository contains only the showcase page and its screenshots (taken from the public pages). The code of the websites themselves is not published here.
+This repository contains only the showcase page and screenshots taken from the public pages. It does not contain the code of the websites.
