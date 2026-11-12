@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>José Sánchez — Web Portfolio</title>
+<meta name="description" content="Websites designed, written and built by José Sánchez, Growth Marketing Lead: positioning, offer, copy and the page itself.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f5f2; --surface:#ffffff; --text:#16161a; --muted:#5d5d66; --line:#e3e1db;
+  --accent:#2f5bd3; --live:#1f8a4c; --live-bg:#e4f4ea; --pre:#9a5b10; --pre-bg:#fbefdc;
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f0f12; --surface:#17171c; --text:#ecebe8; --muted:#a3a3ad; --line:#2a2a31;
+    --accent:#7d9cff; --live:#5fd394; --live-bg:#15301f; --pre:#f0b45f; --pre-bg:#352612;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;height:auto}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+header{padding:72px 0 40px}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.08;letter-spacing:-.025em;margin:12px 0 16px;max-width:18ch}
+.lede{font-size:18px;color:var(--muted);max-width:60ch}
+.lede a{color:var(--text);text-underline-offset:3px}
+main{display:grid;gap:28px;padding-bottom:56px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;
+  display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
+.shots{position:relative;background:var(--line);padding:24px 48px 24px 24px;display:flex;align-items:center;min-height:260px}
+.shots .desk{width:100%;border-radius:10px;display:block;border:1px solid rgba(0,0,0,.08)}
+.shots .mob{position:absolute;right:16px;bottom:16px;width:21%;max-width:118px;aspect-ratio:9/17;object-fit:cover;object-position:top;border-radius:14px;border:3px solid #111;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.body{padding:28px;display:flex;flex-direction:column;gap:14px}
+.top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h2{font-size:24px;letter-spacing:-.015em;line-height:1.2}
+.badge{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.badge.live{color:var(--live);background:var(--live-bg)}
+.badge.pre{color:var(--pre);background:var(--pre-bg)}
+.kind{font-size:14px;color:var(--muted);font-weight:500}
+.body p{color:var(--muted)}
+.body p strong{color:var(--text);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}
+.tags li{font-size:13px;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)}
+.links{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;padding-top:6px}
+.btn{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:15px;text-decoration:none;padding:10px 16px;border-radius:10px;border:1px solid var(--line)}
+.btn.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.btn:hover{opacity:.85}
+.note{font-size:13px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:14px}
+footer a{color:var(--text)}
+@media (max-width:820px){
+  header{padding:48px 0 28px}
+  .card{grid-template-columns:1fr}
+  .shots{min-height:0;padding:16px 36px 16px 16px}
+  .shots .mob{right:10px;bottom:10px;width:22%}
+  .body{padding:22px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Web portfolio</div>
+    <h1>Websites I’ve designed, written and built.</h1>
+    <p class="lede">I’m José Sánchez, a Growth Marketing Lead based in Madrid. Each site below is one of my own projects: I defined the positioning and the offer, wrote the copy and built the page. More about me at <a href="https://josegrowth.com" target="_blank" rel="noopener">josegrowth.com</a>.</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <div class="shots">
+        <img class="desk" src="assets/90scale-desktop.jpg" alt="90scale.com home page on desktop: “You’re losing money when buyers can’t perceive your value”" loading="lazy" width="1440" height="900">
+        <img class="mob" src="assets/90scale-mobile.jpg" alt="90scale.com on mobile" loading="lazy" width="520" height="1126">
+      </div>
+      <div class="body">
+        <div class="top"><h2>90scale</h2><span class="badge live">Live</span></div>
+        <div class="kind">Positioning consultancy · company website</div>
+        <p>The site for my positioning practice. It argues one idea: when buyers can’t perceive a company’s value, sales cycles get longer and acquisition gets more expensive. <strong>The offer is a positioning diagnosis</strong> that rebuilds what a business sells and how it says it.</p>
+        <ul class="tags"><li>Positioning</li><li>Offer design</li><li>Copywriting</li><li>Web build</li></ul>
+        <div class="links"><a class="btn primary" href="https://90scale.com" target="_blank" rel="noopener">Visit 90scale.com ↗</a></div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="shots">
+        <img class="desk" src="assets/copyofficer-desktop.jpg" alt="CopyOfficer home page on desktop: “We Turn Hispanic Demand Into Revenue for You”" loading="lazy" width="1440" height="900">
+        <img class="mob" src="assets/copyofficer-mobile.jpg" alt="CopyOfficer on mobile" loading="lazy" width="520" height="1126">
+      </div>
+      <div class="body">
+        <div class="top"><h2>CopyOfficer</h2><span class="badge live">Live</span></div>
+        <div class="kind">Hispanic acquisition agency · landing page</div>
+        <p>A landing page for a service that designs and runs <strong>Hispanic customer acquisition systems for US brands</strong> in real estate, healthcare, financial services, retail and SaaS. The page explains the gap (journeys never built for how Hispanics buy in Spanish) and leads to a booked call.</p>
+        <ul class="tags"><li>Market positioning</li><li>Bilingual messaging</li><li>Lead capture</li><li>Web build</li></ul>
+        <div class="links"><a class="btn primary" href="https://www.copyofficer.com" target="_blank" rel="noopener">Visit copyofficer.com ↗</a></div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="shots">
+        <img class="desk" src="assets/aml-course-desktop.jpg" alt="Agentic Marketing Lab course page on desktop: “You use AI every day. You still work exactly like you did before it.”" loading="lazy" width="1440" height="900">
+        <img class="mob" src="assets/aml-course-mobile.jpg" alt="Agentic Marketing Lab course page on mobile" loading="lazy" width="520" height="1126">
+      </div>
+      <div class="body">
+        <div class="top"><h2>Agentic Marketing Lab</h2><span class="badge pre">Pre-launch</span></div>
+        <div class="kind">Online course · sales page</div>
+        <p>The sales page for a practical course that teaches marketers to <strong>design, build and direct marketing systems that run with AI agents</strong>, instead of only using AI tools. The page is finished; enrolment is not open yet, and the official domain currently shows an “Opening soon” page.</p>
+        <ul class="tags"><li>Product positioning</li><li>Sales page copy</li><li>Curriculum design</li><li>Web build</li></ul>
+        <div class="links">
+          <a class="btn primary" href="https://agenting-marketing-lab.vercel.app" target="_blank" rel="noopener">See the course page ↗</a>
+          <a class="btn" href="https://agenticmarketinglab.com" target="_blank" rel="noopener">agenticmarketinglab.com ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="shots">
+        <img class="desk" src="assets/josegrowth-desktop.jpg" alt="josegrowth.com on desktop: “Positioning and customer acquisition, end to end”" loading="lazy" width="1440" height="900">
+        <img class="mob" src="assets/josegrowth-mobile.jpg" alt="josegrowth.com on mobile" loading="lazy" width="520" height="1126">
+      </div>
+      <div class="body">
+        <div class="top"><h2>josegrowth.com</h2><span class="badge live">Live</span></div>
+        <div class="kind">Personal site · CV</div>
+        <p>My personal site: <strong>what I do (positioning and customer acquisition, end to end)</strong>, how I work, my experience and a downloadable CV, in one short page.</p>
+        <ul class="tags"><li>Personal positioning</li><li>Copywriting</li><li>Web build</li></ul>
+        <div class="links"><a class="btn primary" href="https://josegrowth.com" target="_blank" rel="noopener">Visit josegrowth.com ↗</a></div>
+      </div>
+    </article>
+  </main>
+</div>
+<footer>
+  <div class="wrap">
+    Screenshots taken on 12 November 2026 from the public pages. Each link opens the live site; this page is a showcase only and contains none of the sites’ code. · <a href="https://josegrowth.com" target="_blank" rel="noopener">josegrowth.com</a>
+  </div>
+</footer>
+</body>
+</html>
